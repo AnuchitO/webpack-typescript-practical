@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack')
 
 module.exports = {
   entry: [
@@ -12,6 +13,9 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.ts', '.tsx']
   },
+  plugins:[
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module:{
     loaders: [
       {
