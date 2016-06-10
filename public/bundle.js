@@ -54,8 +54,9 @@
 	"use strict";
 	var Hello_1 = __webpack_require__(2);
 	console.log(Hello_1.greeting("Anuchit"));
-	var contact = new Hello_1.Contact();
+	var contact = new Hello_1.Contact("Anuchit Prasertsang");
 	console.log("contact:", contact.getAddress());
+	console.log("contact:name:", contact.getName());
 
 
 /***/ },
@@ -68,10 +69,14 @@
 	}
 	exports.greeting = greeting;
 	var Contact = (function () {
-	    function Contact() {
+	    function Contact(name) {
+	        this.name = name;
 	    }
 	    Contact.prototype.getAddress = function () {
 	        return "231 moo 9 kalasin";
+	    };
+	    Contact.prototype.getName = function () {
+	        return this.name;
 	    };
 	    return Contact;
 	}());

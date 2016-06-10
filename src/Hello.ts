@@ -3,9 +3,18 @@ export function greeting(name: string) :string {
 }
 
 export class Contact {
+  name:string
+
+  constructor(name:string){
+    this.name = name;
+  }
 
   getAddress() :string {
     return "231 moo 9 kalasin";
+  }
+
+  getName() :string {
+    return this.name;
   }
 
 }
