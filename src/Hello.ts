@@ -10,7 +10,7 @@ export class Contact {
   }
 
   getAddress() :string {
-    return "231 moo 9 kalasin";
+    return "231 moo 9 bangkok";
   }
 
   getName() :string {
