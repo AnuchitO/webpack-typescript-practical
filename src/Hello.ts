@@ -18,3 +18,10 @@ export class Contact {
   }
 
 }
+
+export interface Contacter{
+  name:string
+
+  getName:()=>string;
+  getAddress:()=>string;
+}
