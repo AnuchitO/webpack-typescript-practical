@@ -49,9 +49,22 @@
 
 /***/ },
 /* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Hello_1 = __webpack_require__(2);
+	console.log(Hello_1.greeting());
+
+
+/***/ },
+/* 2 */
 /***/ function(module, exports) {
 
-	console.log("5555");
+	"use strict";
+	function greeting() {
+	    return "Hello";
+	}
+	exports.greeting = greeting;
 
 
 /***/ }

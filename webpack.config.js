@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/index.ts'
   ],
   output: {
     path: path.join(__dirname, 'public'),
@@ -11,5 +11,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.ts', '.tsx']
+  },
+  module:{
+    loaders: [
+      {
+        test: /\.tsx?$/,
+        loaders: ['ts-loader'],
+        include: path.join(__dirname, 'src')
+      }
+    ]
   }
 };
