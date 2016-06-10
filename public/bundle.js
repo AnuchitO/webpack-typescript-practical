@@ -53,7 +53,7 @@
 
 	"use strict";
 	var Hello_1 = __webpack_require__(2);
-	console.log(Hello_1.greeting());
+	console.log(Hello_1.greeting("Anuchit"));
 
 
 /***/ },
@@ -61,8 +61,8 @@
 /***/ function(module, exports) {
 
 	"use strict";
-	function greeting() {
-	    return "Hello";
+	function greeting(name) {
+	    return name;
 	}
 	exports.greeting = greeting;
 

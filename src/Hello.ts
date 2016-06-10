@@ -1,3 +1,3 @@
-export function greeting(){
-  return "Hello";
+export function greeting(name: string) :string {
+  return name;
 }

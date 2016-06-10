@@ -1,3 +1,3 @@
 import {greeting} from "./Hello"
 
-console.log(greeting());
+console.log(greeting("Anuchit"));
